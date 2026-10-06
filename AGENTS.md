@@ -21,9 +21,11 @@ This is the official documentation website for **FlyEnv** - an all-in-one full-s
 
 ### Multi-Language Support
 
-The documentation supports two languages:
+The documentation supports four languages:
 - **English** (`/docs/`) - Default locale at root path `/`
 - **Chinese** (`/docs/zh/`) - Locale at `/zh/`
+- **Indonesian** (`/docs/id/`) - Locale at `/id/`
+- **Spanish** (`/docs/es/`) - Locale at `/es/`
 
 > Note: The `docsZH` directory referenced in some legacy scripts does not currently exist. All Chinese content is located in `docs/zh/`.
 
@@ -38,7 +40,7 @@ FlyEnv-Doc/
 │   │   ├── config.mts             # Site config (nav, sidebar, locales)
 │   │   ├── env.ts                 # Environment variables (host, GA ID, etc.)
 │   │   ├── theme/                 # Custom theme
-│   │   │   ├── index.js           # Theme entry with Kofi widget integration
+│   │   │   ├── index.js           # Theme entry
 │   │   │   └── custom.css         # Custom styles + Tailwind directives
 │   │   ├── cache/                 # VitePress cache (gitignored)
 │   │   └── dist/                  # Build output (gitignored)
@@ -154,6 +156,21 @@ See `.prettierrc`:
 
 ## Adding New Documentation
 
+### Feature Pages vs Guide Pages
+
+**Feature documents the product surface; Guide documents workflows built on top of the product surface.**
+
+Feature pages (`docs/features/`):
+- Content comes primarily from current FlyEnv source code and product UI
+- Document capabilities that exist inside the FlyEnv module itself
+- May explain what each capability does and how it is operated in FlyEnv, with real UI screenshots
+- May go deep on the module's own features, but must not expand into external tutorials
+
+Guide pages (`docs/guide/`):
+- May combine FlyEnv features with external tools, framework conventions, configuration files and troubleshooting
+- Cover task-oriented or problem-oriented workflows
+- Examples: Xdebug debugging, `.user.ini`, PHP obfuscation strategy, Laravel-specific setup, special rewrite rules
+
 ### Adding a New Guide Page
 
 1. Create the markdown file in `docs/guide/` (English) or `docs/zh/guide/` (Chinese)
@@ -237,7 +254,6 @@ export const FootMessage = undefined                  // Footer message
 
 When `PROD = true`, the following are injected:
 - Google Analytics tracking script
-- Ko-fi donation widget
 - Custom analytics script (`/js/index.js`)
 
 ---
@@ -251,9 +267,6 @@ When `PROD = true`, the following are injected:
 - **Feedback API**: `https://api.macphpstudy.com/api/app/feedback_site`
   - Used by `AppFeedback` component
   - POST endpoint for user messages
-
-### Widgets
-- **Ko-fi**: Floating donation button (loaded from `storage.ko-fi.com`)
 
 ---
 

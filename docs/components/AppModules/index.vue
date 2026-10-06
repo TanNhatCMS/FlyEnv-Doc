@@ -41,15 +41,21 @@
       </div>
     </a>
 
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="Caddy Local Setup on Windows - Caddyfile, PHP-FPM and MySQL with FlyEnv"
+      href="https://youtu.be/NuaYnRiD3AY"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Web Server</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Web Server</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
         <img src="https://oss.macphpstudy.com/image/caddy.svg" />
       </div>
-      <span class="shrink-0 select-text">Caddy</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Caddy</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
     <div
       class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
@@ -93,32 +99,76 @@
       </div>
     </a>
 
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="PostgreSQL Local Setup with FlyEnv and pgAdmin | Start, Connect, Manage"
+      href="https://youtu.be/5gW3WHh8_Jw"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Database</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Database</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
         <img src="https://oss.macphpstudy.com/image/postgresql.svg" />
       </div>
-      <span class="shrink-0 select-text">PostgreSQL</span>
-    </div>
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">PostgreSQL</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
+    <a
+      title="MongoDB Local Setup with FlyEnv | Compass Connection Demo"
+      href="https://youtu.be/wPjgwVeA6lw"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Database</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Database</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center p-4">
         <img src="https://oss.macphpstudy.com/image/MongoDB.svg" />
       </div>
-      <span class="shrink-0 select-text">MongoDB</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">MongoDB</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+    <a
+      title="Qdrant Local Setup in FlyEnv | Versions, Config, Logs, and Dashboard"
+      href="https://youtu.be/ahetMNLLS7s"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Database</span>
+      <div class="aspect-square w-full flex shrink-0 overflow-hidden items-center justify-center p-4">
+        <img src="../SVG/qdrant.svg" />
+      </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Qdrant</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+    <a
+      title="Native Local ClickHouse in 2 Minutes (No Docker, No Config) - FlyEnv"
+      href="https://youtu.be/3ePJYddWYmQ"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Database</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-4">
+        <img src="../SVG/ClickHouse.svg" />
+      </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">ClickHouse</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
     <div
       class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
       <span class="shrink-0 select-text">Database</span>
-      <div class="aspect-square w-full flex shrink-0 overflow-hidden items-center justify-center p-4">
-        <img src="../SVG/qdrant.svg" />
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-4">
+        <img src="../SVG/Neo4j.svg" />
       </div>
-      <span class="shrink-0 select-text">Qdrant</span>
+      <span class="shrink-0 select-text">Neo4j</span>
     </div>
   </template>
   <template v-else-if="type === 2">
@@ -234,20 +284,26 @@
       </div>
       <span class="shrink-0 select-text">Zig</span>
     </div>
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="Bun Local Runtime Setup with FlyEnv: Manage Versions, Projects, and Local Services"
+      href="https://youtu.be/lu68kw8_3dY"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Runtime</span>
-      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-2">
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Runtime</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-4">
         <img src="../SVG/bun.svg" />
       </div>
-      <span class="shrink-0 select-text">Bun</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Bun</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
     <div
       class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
       <span class="shrink-0 select-text">Runtime</span>
-      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-3">
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
         <img src="../SVG/Deno.svg" />
       </div>
       <span class="shrink-0 select-text">Deno</span>
@@ -297,21 +353,30 @@
       </div>
       <span class="shrink-0 select-text">Memcached</span>
     </div>
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="RabbitMQ Local Setup on Windows - Install, Start and Manage with FlyEnv"
+      href="https://youtu.be/ymbyrr5zGkI"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Data Queues</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Data Queues</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
         <img src="../SVG/RabbitMQ.svg" />
       </div>
-      <span class="shrink-0 select-text">RabbitMQ</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">RabbitMQ</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
   </template>
   <template v-else-if="type === 4">
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="Run Numa Locally with FlyEnv | Install, Enable & Monitor"
+      href="https://youtu.be/0qfnkr5V7eE"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">DNS</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">DNS</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center p-5">
         <span style="font-family: 'Instrument Serif', Georgia, serif;
     font-weight: 400;
@@ -322,8 +387,11 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;">Numa</span>
       </div>
-      <span class="shrink-0 select-text">Numa</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Numa</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
     <div
       class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
@@ -342,65 +410,207 @@
       </div>
       <span class="shrink-0 select-text">FTP Server</span>
     </div>
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
-    >
-      <span class="shrink-0 select-text">Utilities</span>
-      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center p-5">
-        <img src="https://oss.macphpstudy.com/image/http.svg" />
-      </div>
-      <span class="shrink-0 select-text">Static Server</span>
-    </div>
   </template>
   <template v-else-if="type === 5">
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="Elasticsearch Local Setup with FlyEnv | Versions, Logs, and Service Controls"
+      href="https://youtu.be/B9Eo2Y-aXWQ"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Search Engine</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Search Engine</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
         <img src="../SVG/Elasticsearch.svg" />
       </div>
-      <span class="shrink-0 select-text">Elasticsearch</span>
-    </div>
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
-    >
-      <span class="shrink-0 select-text">Search Engine</span>
-      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full">
-        <img src="../SVG/Meilisearch.svg"/>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Elasticsearch</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
       </div>
-      <span class="shrink-0 select-text">Meilisearch</span>
-    </div>
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    </a>
+    <a
+      title="Meilisearch Local Setup in FlyEnv Without Docker | Install, Run & Open Mini Dashboard"
+      href="https://youtu.be/vPD3lXo1vr0"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Search Engine</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Search Engine</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full">
-        <img src="../SVG/Typesense.svg"/>
+        <img src="../SVG/Meilisearch.svg" />
       </div>
-      <span class="shrink-0 select-text">Typesense</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Meilisearch</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+    <a
+      title="Native Local Typesense in 2 Minutes (No Docker, No Config) - FlyEnv"
+      href="https://youtu.be/3Uo22iqty9k"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Search Engine</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full">
+        <img src="../SVG/Typesense.svg" />
+      </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Typesense</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+    <a
+      title="ZincSearch Local Setup in FlyEnv Without Docker | Install Versions, Run Service & Open UI"
+      href="https://youtu.be/uOf2cWk3AtU"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Search Engine</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
+        <img src="https://oss.macphpstudy.com/image/assets/home/zincsearch.png" />
+      </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">ZincSearch</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
   </template>
   <template v-else-if="type === 6">
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="FlyEnv + Mailpit: Local Email Testing & SMTP Capture Demo (No Docker)"
+      href="https://youtu.be/D4MkA25Ofd0"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Mail Server</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Mail Server</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
         <img src="../SVG/Mailpit.svg" />
       </div>
-      <span class="shrink-0 select-text">Mailpit</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Mailpit</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
   </template>
   <template v-else-if="type === 7">
+    <a
+      :title="aiCliMcpDemo.title"
+      :href="aiCliMcpDemo.href"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">MCP</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
+        <img src="https://oss.macphpstudy.com/image/app-icon.png" />
+      </div>
+      <span class="shrink-0 select-text text-center text-[#3c3c43] dark:text-[#dfdff6]">MCP Server</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
+    <a
+      :title="aiCliMcpDemo.title"
+      :href="aiCliMcpDemo.href"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Coding</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
+        <img src="../SVG/claude-code.svg" />
+      </div>
+      <span class="shrink-0 select-text text-center text-[#3c3c43] dark:text-[#dfdff6]">Claude Code</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
+    <a
+      :title="aiCliMcpDemo.title"
+      :href="aiCliMcpDemo.href"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Coding</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
+        <img src="../SVG/codex.svg" />
+      </div>
+      <span class="shrink-0 select-text text-center text-[#3c3c43] dark:text-[#dfdff6]">Codex</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
+    <a
+      :title="aiCliMcpDemo.title"
+      :href="aiCliMcpDemo.href"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Coding</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
+        <img src="../SVG/opencode.svg" />
+      </div>
+      <span class="shrink-0 select-text text-center text-[#3c3c43] dark:text-[#dfdff6]">OpenCode</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
+    <a
+      :title="aiCliMcpDemo.title"
+      :href="aiCliMcpDemo.href"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Coding</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
+        <img src="../SVG/kimi.svg" />
+      </div>
+      <span class="shrink-0 select-text text-center text-[#3c3c43] dark:text-[#dfdff6]">Kimi</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
+    <a
+      :title="aiCliMcpDemo.title"
+      :href="aiCliMcpDemo.href"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Coding</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-2">
+        <img src="../SVG/antigravity.svg" />
+      </div>
+      <span class="shrink-0 select-text text-center text-[#3c3c43] dark:text-[#dfdff6]">Antigravity CLI</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
+    <a
+      :title="aiCliMcpDemo.title"
+      :href="aiCliMcpDemo.href"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    >
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Coding</span>
+      <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
+        <img src="../SVG/github.svg" />
+      </div>
+      <span class="shrink-0 select-text text-center text-sm text-[#3c3c43] dark:text-[#dfdff6]">GitHub Copilot CLI</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+
     <div
       class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">AI</span>
+      <span class="shrink-0 select-text">AI Integration</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
         <img src="../SVG/Hermes.svg" />
       </div>
-      <span class="shrink-0 select-text">Hermes Agent</span>
+      <span class="shrink-0 select-text text-center">Hermes Agent</span>
     </div>
 
     <a
@@ -409,7 +619,7 @@
       target="_blank"
       class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Integration</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
         <img src="../SVG/OpenClaw.svg" />
       </div>
@@ -425,7 +635,7 @@
       target="_blank"
       class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Integration</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
         <img src="../SVG/n8n.svg" />
       </div>
@@ -441,7 +651,7 @@
       target="_blank"
       class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Integration</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-5">
         <img src="../SVG/Ollama.svg" />
       </div>
@@ -451,35 +661,53 @@
       </div>
     </a>
 
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="CLIProxyAPI Local AI Gateway - Providers, OAuth & API Keys in FlyEnv"
+      href="https://youtu.be/RmSl4jgmEyI"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">AI</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">AI Gateway</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-6">
         <span class="text-[20px] font-bold text-[#3451b2]">CLIProxyAPI</span>
       </div>
-      <span class="shrink-0 select-text">CLIProxyAPI</span>
-    </div>
+      <span class="shrink-0 select-text text-center text-[#3c3c43] dark:text-[#dfdff6]">CLIProxyAPI</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
   </template>
   <template v-else-if="type === 8">
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+    <a
+      title="RustFS Local Development in One Click — FlyEnv Native Service"
+      href="https://youtu.be/lCEEocXdt_M"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Object Storage</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Object Storage</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full px-3">
         <img src="../SVG/RustFS.svg" />
       </div>
-      <span class="shrink-0 select-text">RustFS</span>
-    </div>
-    <div
-      class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">RustFS</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
+    <a
+      title="Install and Run MinIO Locally with FlyEnv (No Docker) — FlyEnv Native Setup Demo"
+      href="https://youtu.be/MJ9OQBOBXMg"
+      target="_blank"
+      class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
     >
-      <span class="shrink-0 select-text">Object Storage</span>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Object Storage</span>
       <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full px-3">
         <img src="../SVG/Minio.svg" />
       </div>
-      <span class="shrink-0 select-text">Minio</span>
-    </div>
+      <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Minio</span>
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+      </div>
+    </a>
   </template>
   <template v-else-if="type === 9">
     <div
@@ -513,33 +741,66 @@
     </div>
   </template>
   <template v-else-if="type === 11">
-      <div
-        class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+      <a
+        title="Native Local Nacos for Service Discovery and Config In FlyEnv — No Docker"
+        href="https://youtu.be/8ceC7QqY4UA"
+        target="_blank"
+        class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
       >
-        <span class="shrink-0 select-text truncate">Service Governance</span>
+        <span class="shrink-0 select-text truncate text-[#3c3c43] dark:text-[#dfdff6]">Service Governance</span>
         <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full px-4">
           <img src="../SVG/R-NACOS.svg" />
         </div>
-        <span class="shrink-0 select-text">R-NACOS</span>
-      </div>
-      <div
-        class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+        <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">R-NACOS</span>
+        <div class="absolute inset-0 flex items-center justify-center z-20">
+          <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+        </div>
+      </a>
+      <a
+        title="Run Consul Locally Without Docker - FlyEnv Consul Module Demo"
+        href="https://youtu.be/pa0QFgpu17w"
+        target="_blank"
+        class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
       >
-        <span class="shrink-0 select-text truncate">Service Governance</span>
+        <span class="shrink-0 select-text truncate text-[#3c3c43] dark:text-[#dfdff6]">Service Governance</span>
         <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-4">
           <img src="../SVG/Consul.svg" />
         </div>
-        <span class="shrink-0 select-text">Consul</span>
-      </div>
-      <div
-        class="rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+        <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Consul</span>
+        <div class="absolute inset-0 flex items-center justify-center z-20">
+          <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+        </div>
+      </a>
+      <a
+        title="Native Local etcd Setup Without Docker - Install, Start and Monitor with FlyEnv"
+        href="https://youtu.be/xsw8BQxii10"
+        target="_blank"
+        class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
       >
-        <span class="shrink-0 select-text truncate">Service Governance</span>
+        <span class="shrink-0 select-text truncate text-[#3c3c43] dark:text-[#dfdff6]">Service Governance</span>
         <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full px-4">
           <img src="../SVG/etcd.svg" />
         </div>
-        <span class="shrink-0 select-text">Etcd</span>
-      </div>
+        <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Etcd</span>
+        <div class="absolute inset-0 flex items-center justify-center z-20">
+          <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+        </div>
+      </a>
+      <a
+        title="Temporal Local Development in One Click — FlyEnv Native Service"
+        href="https://youtu.be/E_jetPnVxBo"
+        target="_blank"
+        class="group hover:scale-105 transition-all duration-300 relative no-underline overflow-hidden rounded-lg shadow-md bg-slate-100 flex flex-col items-center p-5 dark:bg-slate-800 justify-between"
+      >
+        <span class="shrink-0 select-text truncate text-[#3c3c43] dark:text-[#dfdff6]">Service Governance</span>
+        <div class="aspect-square flex shrink-0 overflow-hidden items-center justify-center w-full p-4">
+          <img src="../SVG/Temporal.svg" />
+        </div>
+        <span class="shrink-0 select-text text-[#3c3c43] dark:text-[#dfdff6]">Temporal</span>
+        <div class="absolute inset-0 flex items-center justify-center z-20">
+          <SVGUse class="w-16 opacity-20 transition-all duration-300 group-hover:opacity-65" :svg="import('../SVG/play.svg?raw')" />
+        </div>
+      </a>
     </template>
   <template v-else-if="type === 12">
     <div
@@ -560,6 +821,11 @@
   defineProps<{
     type: number
   }>()
+
+  const aiCliMcpDemo = {
+    title: 'FlyEnv AI CLI + MCP End-to-End Demo: From MySQL to a Live PHP CRUD Site',
+    href: 'https://youtu.be/frprHkD1_rQ'
+  }
 </script>
 <script setup lang="ts">
 </script>

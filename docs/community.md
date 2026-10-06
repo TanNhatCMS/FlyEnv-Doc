@@ -1,20 +1,57 @@
 ---
 layout: home
+title: FlyEnv Community Stories & Developer Tutorials
 
 head:
   - - meta
     - name: description
-      content: "Discover real developer stories, tutorials, and reviews about FlyEnv. Learn how teams replace XAMPP, Docker, and Laragon with FlyEnv on macOS and Windows."
+      content: 'Read FlyEnv developer stories, migration experiences, tutorials, and reviews covering local stacks on macOS, Windows, and Linux.'
   - - meta
     - property: og:title
       content: "FlyEnv Community Stories & Tutorials"
   - - meta
     - property: og:description
       content: "Real community articles, tutorials, and videos about FlyEnv from developers around the world."
-  - - script
-    - type: application/ld+json
-    - |
-      {"@context":"https://schema.org","@type":"ItemList","name":"FlyEnv Community Articles","description":"Community-driven tutorials, reviews, and stories about FlyEnv from developers worldwide.","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"TechArticle","headline":"Tutorial Lengkap FlyEnv untuk Laravel: Setup Local Environment Alternatif XAMPP","description":"A comprehensive guide on why FlyEnv replaces XAMPP for PHP development on macOS with project-level version isolation and automatic SSL.","author":{"@type":"Person","name":"Arizainalf"},"publisher":{"@type":"Organization","name":"Medium"},"datePublished":"2025-05-14","about":{"@type":"SoftwareApplication","name":"FlyEnv","applicationCategory":"DeveloperApplication","operatingSystem":["macOS","Windows","Linux"]}}},{"@type":"ListItem","position":2,"item":{"@type":"TechArticle","headline":"FlyEnv: Alternatif Terbaik Laragon untuk Pengembangan Web Lokal (Setup & Review)","description":"Experience sharing on migrating from Laragon to FlyEnv, highlighting multi-version runtime management and cross-platform support.","author":{"@type":"Person","name":"Caturputra"},"publisher":{"@type":"Organization","name":"Medium"},"datePublished":"2025-05-23","about":{"@type":"SoftwareApplication","name":"FlyEnv","applicationCategory":"DeveloperApplication","operatingSystem":["macOS","Windows","Linux"]}}},{"@type":"ListItem","position":3,"item":{"@type":"TechArticle","headline":"FlyEnv: Panduan Lengkap Instalasi dan Konfigurasi Development Environment All-in-One","description":"Complete installation and configuration guide for FlyEnv covering PHP, Node.js, Java and project-level environment isolation.","author":{"@type":"Person","name":"Agus Prayogi"},"publisher":{"@type":"Organization","name":"Medium"},"datePublished":"2025-05-30","about":{"@type":"SoftwareApplication","name":"FlyEnv","applicationCategory":"DeveloperApplication","operatingSystem":["macOS","Windows","Linux"]}}}]}
+  - - meta
+    - property: og:type
+      content: website
+  - - meta
+    - property: og:url
+      content: https://flyenv.com/community
+  - - meta
+    - property: og:image
+      content: https://oss.macphpstudy.com/image/app-icon.png
+  - - meta
+    - name: twitter:card
+      content: summary
+  - - meta
+    - name: twitter:title
+      content: "FlyEnv Community Stories & Tutorials"
+  - - meta
+    - name: twitter:description
+      content: "Real community articles, tutorials, and videos about FlyEnv from developers around the world."
+  - - meta
+    - name: twitter:image
+      content: https://oss.macphpstudy.com/image/app-icon.png
+  - - link
+    - rel: canonical
+      href: https://flyenv.com/community
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://flyenv.com/community
+  - - link
+    - rel: alternate
+      hreflang: zh-CN
+      href: https://flyenv.com/zh/community
+  - - link
+    - rel: alternate
+      hreflang: id-ID
+      href: https://flyenv.com/id/community
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://flyenv.com/community
 ---
 
 <script setup>
@@ -26,4 +63,4 @@ import posts from './data/community-posts.json'
 
 <AppCommunityPosts :posts="posts" locale="en" />
 <AppCommunityChannels title="Join the Community" locale="en" />
-<AppCommunityCTA locale="en" />
+<AppCommunityCTA :posts="posts" locale="en" />

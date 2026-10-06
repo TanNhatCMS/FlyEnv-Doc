@@ -3,8 +3,14 @@ title: 'How to Run Laravel Locally: Complete Setup Guide with FlyEnv'
 head:
   - - meta
     - name: description
-      content: 'Set up Laravel development environment in minutes with FlyEnv. One-click Laravel installation, automatic URL rewrite, SSL, and database configuration for macOS, Windows, and Linux.'
+      content: 'Set up Laravel locally with FlyEnv using PHP, a database, URL rewrite rules, and HTTPS on macOS, Windows, or Linux.'
 ---
+
+<script setup>
+import AppGuideCommunityProof from '../components/AppCommunityEvidence/GuideProof.vue'
+import communityPosts from '../data/community-posts.json'
+import { communityEvidence } from '../data/community-evidence'
+</script>
 
 # How to Run Laravel Locally: Complete Setup Guide with FlyEnv
 
@@ -352,6 +358,8 @@ A: Absolutely. FlyEnv supports both. Just change `DB_CONNECTION=pgsql` in `.env`
 **Q: What's the difference between `php artisan serve` and FlyEnv?**
 
 A: `php artisan serve` uses PHP's built-in server—slow, single-threaded, and not suitable for development with queues or real-time features. FlyEnv provides a production-like Nginx/Apache setup.
+
+<AppGuideCommunityProof :posts="communityPosts" :evidence="communityEvidence.en" locale="en" post-id="why-i-finally-switched-from-laragon-to-flyenv" guide-path="/guide/run-laravel-use-flyenv" />
 
 ## Next Steps
 

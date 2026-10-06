@@ -12,11 +12,13 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
+    "test:seo": "node --test tests/seo-build-output.test.mjs",
     "docs:zh:dev": "vitepress dev docsZH",
     "docs:zh:build": "vitepress build docsZH",
     "docs:zh:preview": "vitepress preview docsZH"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "axios": "^1.13.6",
     "svg-inline-loader": "^0.8.2"
   },

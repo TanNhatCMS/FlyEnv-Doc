@@ -1,91 +1,66 @@
 ---
 # 针对 SEO 优化的 VitePress 首页配置
 layout: home
+markdownStyles: false
 
-title: 'FlyEnv - Native Local Development Environment for PHP, Node.js & AI'
+title: 'FlyEnv - Open Source Local Development Environment for AI Agents'
 titleTemplate: false
 
 # 在 head 中显式添加 Meta Description，提升搜索结果的点击率 (CTR)
 head:
   - - meta
     - name: description
-      content: 'FlyEnv is a native local development environment for PHP, Node.js, Python, databases, HTTPS, and local AI. Run projects on macOS, Windows, and Linux without Docker overhead.'
-  - - script
-    - type: application/ld+json
-    - |
-      {"@context":"https://schema.org","@type":"SoftwareApplication","name":"FlyEnv","applicationCategory":"DeveloperApplication","operatingSystem":["macOS","Windows","Linux"],"description":"FlyEnv is a native local development environment for PHP, Node.js, Python, databases, HTTPS, and local AI. Run projects without Docker overhead.","url":"https://www.flyenv.com/","downloadUrl":"https://www.flyenv.com/download","softwareHelp":"https://www.flyenv.com/guide/what-is-flyenv","author":{"@type":"Person","name":"Alex Xu","url":"https://github.com/xpf0000"},"publisher":{"@type":"Organization","name":"FlyEnv","url":"https://www.flyenv.com"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
-
-hero:
-  name: "FlyEnv"
-  # 优化：直接点出“它是谁的替代品”，吸引正在寻找 Docker/XAMPP 替代方案的用户
-  text: "The Native Alternative to Docker & XAMPP"
-  # 优化：加入 "Offline AI Agent" 和 "Instant Setup"，对应 GSC 中的高印象词汇
-  tagline: "High-performance local development environment for PHP, Node.js, and Python. Run Offline AI Agents and manage local sites with zero configuration."
-  image:
-    src: 'https://oss.macphpstudy.com/image/app-icon.png'
-    alt: 'FlyEnv - Native PHP and AI Development Environment'
-  actions:
-    - theme: brand
-      text: 'Download Free'
-      link: /download
-    - theme: alt
-      text: 'Quick Start'
-      link: /guide/getting-started
-
-features:
-  - icon:
-      src: 'https://oss.macphpstudy.com/image/fast.svg'
-      width: '32px'
-      height: '32px'
-    title: Native Speed (No Docker)
-    # 优化：强调“低资源占用”，这是 Docker 用户最头疼的痛点
-    details: Runs Nginx, PHP, and MySQL as native binaries. Starts in milliseconds and uses 80% less RAM than Docker Desktop.
-  - icon:
-      src: 'https://oss.macphpstudy.com/image/deep.svg'
-      width: '32px'
-      height: '32px'
-    # 优化：针对 GSC 中 4500+ 曝光的 AI 词汇
-    title: Private Offline AI Agents
-    details: Build and run local AI Agents with integrated Ollama. Seamlessly deploy **Qwen 3.5, Gemma 3, and GLM-5**. Keep your code and data 100% private with zero latency.
-  - icon:
-      src: 'https://oss.macphpstudy.com/image/all.svg'
-      width: '32px'
-      height: '32px'
-    title: Universal Native Stack
-    # 优化：提及 NVM 和 PHP Monitor，覆盖更多工具类搜索词
-    details: A unified replacement for NVM, XAMPP, and Laragon. Switch between PHP 5.6 to 8.4 and multiple Node.js versions instantly.
-  - icon:
-      src: 'https://oss.macphpstudy.com/image/same.svg'
-      width: '32px'
-      height: '32px'
-    title: Pro Dev Utilities
-    # 优化：提及 GSC 中排名较高的 PHP Obfuscator 工具
-    details: Includes built-in PHP Obfuscator, SSL generator, Mailpit, and Cloudflare Tunneling for seamless local-to-web testing.
+      content: 'FlyEnv is an open-source local development workspace for AI agents on macOS, Windows, and Linux, with runtimes, databases, web servers, sites, HTTPS, and MCP.'
+  - - meta
+    - property: og:title
+      content: 'FlyEnv - Open Source Local Development Environment for AI Agents'
+  - - meta
+    - property: og:description
+      content: 'FlyEnv is an open-source local development environment for AI agents on macOS, Windows and Linux. Manage PHP, Node.js, Python, databases, web servers, local sites and HTTPS with FlyEnv MCP.'
+  - - meta
+    - property: og:type
+      content: website
+  - - meta
+    - property: og:url
+      content: https://flyenv.com/
+  - - meta
+    - property: og:image
+      content: https://oss.macphpstudy.com/image/app-icon.png
+  - - meta
+    - name: twitter:card
+      content: summary
+  - - meta
+    - name: twitter:title
+      content: 'FlyEnv - Open Source Local Development Environment for AI Agents'
+  - - meta
+    - name: twitter:description
+      content: 'FlyEnv is an open-source local development environment for AI agents on macOS, Windows and Linux.'
+  - - meta
+    - name: twitter:image
+      content: https://oss.macphpstudy.com/image/app-icon.png
+  - - link
+    - rel: canonical
+      href: https://flyenv.com/
+  - - link
+    - rel: alternate
+      hreflang: en
+      href: https://flyenv.com/
+  - - link
+    - rel: alternate
+      hreflang: zh-CN
+      href: https://flyenv.com/zh/
+  - - link
+    - rel: alternate
+      hreflang: id-ID
+      href: https://flyenv.com/id/
+  - - link
+    - rel: alternate
+      hreflang: x-default
+      href: https://flyenv.com/
 ---
 
 <script setup>
-import AppSvgIcon from './components/VueSvgIcon/svg.vue';
-import AppCoreModule from './components/AppCoreModule/en.vue';
-import AppToolsModule from './components/AppToolModule/en.vue';
-import AppNoFountTipsModules from './components/AppNoFoundTips/index.vue';
-import AppGitHubModules from './components/AppGithub/en.vue';
-import AppCommentModules from './components/AppComment/index.vue';
-import AppCanDoModules from './components/AppCanDo/en.vue';
-import AppPriceModules from './components/AppPrice/en.vue';
+import AppNewHome from './components/AppNewHome/en.vue'
 </script>
 
-<AppSvgIcon />
-
-<AppCanDoModules />
-
-<AppCoreModule />
-
-<AppToolsModule />
-
-<AppGitHubModules />
-
-<AppCommentModules />
-
-<AppPriceModules />
-
-<AppNoFountTipsModules />
+<AppNewHome />

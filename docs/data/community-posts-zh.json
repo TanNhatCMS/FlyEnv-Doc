@@ -194,5 +194,175 @@
     "relevance_score": 10,
     "seoTitle": "FlyEnv 全栈开发环境：替代 Docker 和 XAMPP 的最佳选择",
     "seoSummary": "跨平台一体化全栈本地开发环境管理工具，采用原生二进制运行，无需 Docker 虚拟化层即可管理 PHP、Node.js、MySQL 等服务。解决容器资源占用高、环境配置繁琐痛点，提供零开销流畅开发体验。"
+  },
+  {
+    "id": "juejin-7666754297045614628",
+    "title": "环境管理神器flyenv",
+    "url": "https://juejin.cn/post/7666754297045614628",
+    "author": "西雨东晴",
+    "platform": "掘金",
+    "language": "zh",
+    "date": "2026-07-27",
+    "summary": "作者从维护多个 PHP、Node.js 与数据库服务项目的日常场景出发，介绍了通过统一图形界面安装不同运行时、按项目切换版本、管理本地服务、配置站点并查看日志的体验与适用场景。",
+    "tags": [
+      "tutorial",
+      "php",
+      "nodejs",
+      "docker"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 80,
+    "relevance_score": 9
+  },
+  {
+    "id": "csdn-163329080",
+    "title": "FlyEnv 本地开发集成环境的六边形战士",
+    "url": "https://blog.csdn.net/toptopdj/article/details/163329080",
+    "author": "玖音",
+    "platform": "CSDN",
+    "language": "zh",
+    "date": "2026-07-30",
+    "summary": "一篇面向 PHP 开发者的 FlyEnv 综合评测与上手指南，比较了 XAMPP、Laragon、MAMP、Valet 和 Docker 等本地开发方案，并提供服务启动、站点配置、PHP 版本切换、证书、端口与 hosts 问题的排查建议。作者还提出了增加 enable-php-*.php 配置入口的具体改进建议。",
+    "tags": [
+      "review",
+      "tutorial",
+      "php",
+      "docker",
+      "xampp"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 80,
+    "relevance_score": 9,
+    "seoTitle": "FlyEnv 本地开发环境评测与 PHP 上手指南",
+    "seoSummary": "面向 PHP 开发者的 FlyEnv 评测与上手指南：比较 XAMPP、Laragon、MAMP、Valet 和 Docker，并涵盖服务、站点、PHP 版本、证书及端口排查。"
+  },
+  {
+    "id": "ankaonb-flyenv-local-development-environment",
+    "title": "推荐一款本地开发环境部署神器flyenv 吊打市面上大多数软件",
+    "url": "https://www.ankaonb.com/industry-insights/53.html",
+    "author": "安靠数字工坊",
+    "platform": "Blog",
+    "language": "zh",
+    "date": "2026-08-05",
+    "summary": "安靠数字工坊介绍 FlyEnv 如何在 Windows 和 macOS 上统一管理 Apache、Nginx、PHP、数据库、Redis 与 Mailpit，并展示项目级运行时切换、HTTPS 本地站点和 AI/MCP 工作流。",
+    "tags": [
+      "review",
+      "php",
+      "macos",
+      "windows",
+      "ai",
+      "docker"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 75,
+    "relevance_score": 9,
+    "seoTitle": "FlyEnv Windows 与 Mac 本地开发环境一站式管理介绍",
+    "seoSummary": "了解 FlyEnv 如何在 Windows 和 macOS 上统一管理 PHP、Web 服务器、数据库、Redis、Mailpit、本地 HTTPS 站点及 AI/MCP 工具。"
+  },
+  {
+    "id": "navg-servbay-to-flyenv-php-plugin-development",
+    "title": "从ServBay到FlyEnv：一个PHP插件开发者的环境管理工具深度评测",
+    "url": "https://navg.cn/thread-30.htm",
+    "author": "段先生",
+    "platform": "XiunoX Forum",
+    "language": "zh",
+    "date": "2026-08-10",
+    "summary": "一位长期维护 Xiuno BBS 插件的 Windows 开发者分享从 ServBay 迁移到 FlyEnv 两周后的体验，重点记录多版本 PHP、项目级版本隔离、站点 HTTPS、AI 编程 CLI 与 MCP Server。",
+    "tags": [
+      "review",
+      "php",
+      "windows",
+      "ai",
+      "docker"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 100,
+    "relevance_score": 10,
+    "seoTitle": "从 ServBay 迁移到 FlyEnv：PHP 插件开发者真实评测",
+    "seoSummary": "一位 Xiuno BBS 插件开发者记录从 ServBay 迁移到 FlyEnv 的两周体验，涵盖多版本 PHP、项目级隔离、HTTPS 站点及 AI/MCP 集成。"
+  },
+  {
+    "id": "juejin-7674818461377495050",
+    "title": "告别“散装”本地环境：FlyEnv 如何把多版本运行时、服务与 AI 工具收进一个工作台",
+    "url": "https://juejin.cn/post/7674818461377495050",
+    "author": "用户7376317088702",
+    "platform": "掘金",
+    "language": "zh",
+    "date": "2026-08-17",
+    "summary": "文章从多项目维护的日常问题出发，介绍 FlyEnv 对多版本运行时、数据库与 Web 服务、本地站点和 AI 工具的集中管理，并讨论迁移步骤以及与 Docker 的适用边界。",
+    "tags": [
+      "review",
+      "php",
+      "nodejs",
+      "ai",
+      "docker"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 90,
+    "relevance_score": 10,
+    "seoTitle": "FlyEnv 多运行时、本地服务与 AI 工具工作流",
+    "seoSummary": "从多项目本地开发出发，介绍 FlyEnv 如何集中管理运行时、数据库、Web 服务、本地站点和 AI 工具，并说明与 Docker 的适用边界。"
+  },
+  {
+    "id": "toutiao-7680435277819314739",
+    "title": "一个人的古籍站，我是怎么用 FlyEnv 把本地开发环境理顺的",
+    "url": "https://www.toutiao.com/article/7680435277819314739/",
+    "author": "",
+    "platform": "今日头条",
+    "language": "zh",
+    "date": "2026-09-01",
+    "summary": "作者独自维护古籍资料库项目，分享在 Windows 上用 FlyEnv 管理 Laravel、PHP、Python、Node.js、PostgreSQL、Redis 与本地 HTTPS 的真实工作流。",
+    "tags": [
+      "case-study",
+      "php",
+      "postgresql",
+      "nodejs"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 95,
+    "relevance_score": 10
+  },
+  {
+    "id": "csdn-164155021",
+    "title": "FlyEnv：把 Java 开发环境，从“配置两小时“变成“点击三下“",
+    "url": "https://blog.csdn.net/zbsxcc/article/details/164155021",
+    "author": "zbsxcc",
+    "platform": "CSDN",
+    "language": "zh",
+    "date": "2026-08-29",
+    "summary": "这篇 CSDN 文章面向 Java 开发者介绍 FlyEnv，强调在 macOS、Windows 和 Linux 上用统一的本地开发环境管理工具减少手动配置与环境切换成本。",
+    "tags": [
+      "tutorial",
+      "java"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 85,
+    "relevance_score": 9
+  },
+  {
+    "id": "zhihu-2075241562318152899",
+    "title": "FlyEnv 使用体验：一款省心的本地开发环境管理工具",
+    "url": "https://zhuanlan.zhihu.com/p/2075241562318152899",
+    "author": "啊哈",
+    "platform": "知乎",
+    "language": "zh",
+    "date": "2026-08-24",
+    "summary": "作者分享实际使用 FlyEnv 的体验，重点介绍多版本管理、数据库与 Redis 等服务集中控制、本地站点配置以及更直观的状态和问题排查，适合不想重复维护环境配置的日常开发者。",
+    "tags": [
+      "review",
+      "php",
+      "nodejs"
+    ],
+    "cover": "",
+    "featured": false,
+    "quality_score": 90,
+    "relevance_score": 10
   }
 ]

@@ -62,31 +62,6 @@
 
         <div class="donate-grid community-payment-grid">
           <article class="donate-card donate-hover">
-            <div class="donate-header kofi-bg">
-              <span class="donate-mark">KO</span>
-            </div>
-            <div class="donate-body">
-              <h3>Ko-fi</h3>
-              <p>{{ t.kofiDesc }}</p>
-              <div class="donate-qr-wrap">
-                <img
-                  src="https://oss.macphpstudy.com/image/qrcode3@2x.png"
-                  alt="Ko-fi QR"
-                  class="donate-qr"
-                />
-              </div>
-              <a
-                href="https://ko-fi.com/xpf0000"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="donate-btn kofi-btn no-underline"
-              >
-                {{ t.supportOnKofi }}
-              </a>
-            </div>
-          </article>
-
-          <article class="donate-card donate-hover">
             <div class="donate-header wechat-bg">
               <span class="donate-mark">WX</span>
             </div>
@@ -131,48 +106,60 @@
           <h2 class="no-border">{{ t.specialThanks }}</h2>
           <p>{{ t.specialThanksDesc }}</p>
         </div>
-        <div class="thanks-card">
-          <div class="thanks-avatar">F4</div>
-          <div class="thanks-body">
-            <p class="thanks-name">F4nniu</p>
-            <p class="thanks-desc">
-              {{ t.f4Prefix }}
-              <a
-                href="https://www.fastadmin.net/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="no-underline"
-                >FastAdmin</a
-              >{{ t.f4Suffix }} <strong>flyenv.com</strong> {{ t.domainLabel
-              }}{{ t.sentenceEnd }}
-            </p>
+        <div class="thanks-list">
+          <div class="thanks-card">
+            <div class="thanks-avatar">F4</div>
+            <div class="thanks-body">
+              <p class="thanks-name">F4nniu</p>
+              <p class="thanks-desc">
+                {{ t.f4Prefix }}
+                <a
+                  href="https://www.fastadmin.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="no-underline"
+                  >FastAdmin</a
+                >{{ t.f4Suffix }} <strong>flyenv.com</strong> {{ t.domainLabel
+                }}{{ t.sentenceEnd }}
+              </p>
+            </div>
+          </div>
+          <div class="thanks-card">
+            <div class="thanks-avatar">SP</div>
+            <div class="thanks-body">
+              <p class="thanks-name">
+                <a
+                  href="https://signpath.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="no-underline"
+                  >SignPath</a
+                >
+              </p>
+              <p class="thanks-desc">
+                {{ t.signPathPrefix }}
+                <a
+                  href="https://signpath.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="no-underline"
+                  >SignPath.io</a
+                >{{ t.signPathMiddle }}
+                <a
+                  href="https://signpath.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="no-underline"
+                  >SignPath Foundation</a
+                >{{ t.signPathEnd }}{{ t.sentenceEnd }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="sponsor-v2-section sponsor-v2-section-alt">
-      <div class="sponsor-v2-inner sponsor-v2-inner-list">
-        <div class="sponsor-v2-header">
-          <h2 class="no-border">{{ t.donationTitle }}</h2>
-          <p>{{ t.donationDesc }}</p>
-        </div>
-        <AppSponsor
-          :list="sponsorData.list"
-          :title="t.donationTitle"
-          :header-link-text="t.viewOnKofi"
-          header-link-href="https://ko-fi.com/xpf0000"
-          :show-avatars="true"
-          :show-messages="false"
-          :page-size="5"
-          :max-avatars="14"
-          :prev-text="t.prev"
-          :next-text="t.next"
-        />
-      </div>
-    </section>
-
-    <section class="sponsor-v2-section">
       <div class="sponsor-v2-inner sponsor-v2-inner-list">
         <div class="sponsor-v2-header">
           <h2 class="no-border">{{ t.articlesTitle }}</h2>
@@ -232,7 +219,7 @@
       </div>
     </section>
 
-    <section class="sponsor-v2-section sponsor-v2-section-alt">
+    <section class="sponsor-v2-section">
       <div class="sponsor-v2-inner sponsor-v2-inner-list">
         <div class="sponsor-v2-header">
           <h2 class="no-border">{{ t.pullRequestsTitle }}</h2>
@@ -307,18 +294,10 @@
             <p>{{ t.ctaDesc }}</p>
             <div class="cta-buttons">
               <a
-                href="https://ko-fi.com/xpf0000"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="cta-btn cta-btn-primary no-underline"
-              >
-                {{ t.becomeSupporter }}
-              </a>
-              <a
                 href="https://github.com/xpf0000/FlyEnv"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="cta-btn cta-btn-secondary no-underline"
+                class="cta-btn cta-btn-primary no-underline"
               >
                 {{ t.starOnGithub }}
               </a>
@@ -335,8 +314,6 @@
 
 <script setup lang="ts">
   import { computed, ref } from 'vue'
-  import AppSponsor from '../AppSponsor/index.vue'
-  import sponsorData from '../../data/sponsor.json'
   import communityPosts from '../../data/community-posts.json'
   import communityPostsZh from '../../data/community-posts-zh.json'
   import pullRequestData from '../../data/flyenv-pull-requests.json'
@@ -361,7 +338,7 @@
 
   const props = withDefaults(
     defineProps<{
-      i18n?: 'en' | 'zh'
+      i18n?: 'en' | 'zh' | 'id' | 'es'
     }>(),
     {
       i18n: 'en'
@@ -372,19 +349,19 @@
     en: {
       heroTitle: 'FlyEnv License',
       heroDesc:
-        'Buy a FlyEnv Personal License for licensed access to premium features, one device activation, and continued updates. FlyEnv remains open-source and free to evaluate.',
-      licenseTitle: 'Buy FlyEnv Personal License',
+        'Buy a FlyEnv License for licensed access to premium features, one device activation, and continued updates. FlyEnv remains open-source and free to evaluate.',
+      licenseTitle: 'Buy FlyEnv License',
       licenseDesc:
-        'The Paddle checkout sells a real FlyEnv software license. After payment, use your Paddle order ID in the app license request flow for activation review.',
+        'The Paddle checkout sells a real FlyEnv software license. After payment, use your Paddle order ID in the app license request flow for manual license issuance.',
       licenseGuide: 'Read license terms and activation guide',
       licenseGuideShort: 'License Terms',
-      paddleTitle: 'FlyEnv Personal License',
+      paddleTitle: 'FlyEnv License',
       paddleDesc: 'Software license checkout by Paddle',
       licensePriceLabel: 'Permanent license',
       paddleFeatures: [
         'One device activation',
         'Removes evaluation limits',
-        'Manual review within 24 hours',
+        'Manual license issuance within 24 hours',
         'License transfer supported'
       ],
       openingCheckout: 'Opening Checkout...',
@@ -394,23 +371,20 @@
       refundLink: 'Refunds',
       communityTitle: 'Other Community Contribution Methods',
       communityDesc:
-        'Ko-fi, WeChat Pay, Alipay, Pull Requests, and original articles are handled outside Paddle and may be submitted manually as license request proof.',
-      kofiDesc: 'Community contribution via Ko-fi',
-      supportOnKofi: 'Contribute on Ko-fi',
+        'WeChat Pay, Alipay, Pull Requests, and original articles are handled outside Paddle and may be submitted manually as license request proof.',
       wechatTitle: 'WeChat Pay',
       alipayTitle: 'Alipay',
       scanToContribute: 'Scan QR code to contribute',
       scanQr: 'Scan QR Code',
       specialThanks: 'Special Thanks',
       specialThanksDesc: 'Thank you to every friend who helps FlyEnv keep improving.',
+      signPathPrefix: 'Free code signing for FlyEnv on Windows is provided by',
+      signPathMiddle: ', with the certificate provided by',
+      signPathEnd: '',
       f4Prefix: 'Founder of',
       f4Suffix: ', for funding the',
       domainLabel: 'domain',
       sentenceEnd: '.',
-      donationTitle: 'Community Contribution Records',
-      donationDesc:
-        'Public records from users who helped FlyEnv through Ko-fi or other community contribution channels.',
-      viewOnKofi: 'View on Ko-fi',
       articlesTitle: 'User Articles',
       articlesDesc:
         'Original tutorials, reviews, videos, and migration stories shared by FlyEnv users.',
@@ -426,27 +400,82 @@
       ctaTitle: 'Get Licensed or Contribute',
       ctaDesc:
         'Buy a software license through Paddle, contribute code, or share original FlyEnv content. Each path helps qualify a license request under the activation guide.',
-      becomeSupporter: 'Contribute on Ko-fi',
       starOnGithub: 'Star on GitHub',
       prev: 'Prev',
       next: 'Next'
     },
+    id: {
+      heroTitle: 'Lisensi FlyEnv',
+      heroDesc:
+        'Beli Lisensi FlyEnv untuk akses berlisensi ke fitur premium, aktivasi pada satu perangkat, dan pembaruan berkelanjutan. FlyEnv tetap open-source dan dapat dievaluasi secara gratis.',
+      licenseTitle: 'Beli Lisensi FlyEnv',
+      licenseDesc:
+        'Checkout Paddle menjual lisensi perangkat lunak FlyEnv yang sah. Setelah pembayaran, gunakan ID pesanan Paddle Anda pada alur permintaan lisensi di aplikasi untuk penerbitan lisensi manual.',
+      licenseGuide: 'Baca ketentuan lisensi dan panduan aktivasi',
+      licenseGuideShort: 'Ketentuan Lisensi',
+      paddleTitle: 'Lisensi FlyEnv',
+      paddleDesc: 'Checkout lisensi perangkat lunak oleh Paddle',
+      licensePriceLabel: 'Lisensi permanen',
+      paddleFeatures: [
+        'Aktivasi satu perangkat',
+        'Menghapus batas evaluasi',
+        'Penerbitan lisensi manual dalam 24 jam',
+        'Mendukung transfer lisensi'
+      ],
+      openingCheckout: 'Membuka checkout...',
+      buyWithPaddle: 'Beli Lisensi dengan Paddle',
+      termsLink: 'Ketentuan',
+      privacyLink: 'Privasi',
+      refundLink: 'Pengembalian Dana',
+      communityTitle: 'Cara Lain Berkontribusi ke Komunitas',
+      communityDesc:
+        'WeChat Pay, Alipay, pull request, dan artikel orisinal diproses di luar Paddle dan dapat dikirimkan secara manual sebagai bukti permintaan lisensi.',
+      wechatTitle: 'WeChat Pay',
+      alipayTitle: 'Alipay',
+      scanToContribute: 'Pindai kode QR untuk berkontribusi',
+      scanQr: 'Pindai Kode QR',
+      specialThanks: 'Terima Kasih Khusus',
+      specialThanksDesc: 'Terima kasih kepada setiap teman yang membantu FlyEnv terus berkembang.',
+      signPathPrefix: 'Penandatanganan kode gratis untuk FlyEnv di Windows disediakan oleh',
+      signPathMiddle: ', dengan sertifikat yang disediakan oleh',
+      signPathEnd: '',
+      f4Prefix: 'Pendiri',
+      f4Suffix: ', yang membiayai domain',
+      domainLabel: '',
+      sentenceEnd: '.',
+      articlesTitle: 'Artikel Pengguna',
+      articlesDesc: 'Tutorial, ulasan, video, dan kisah migrasi orisinal yang dibagikan pengguna FlyEnv.',
+      articlesHead: 'Artikel',
+      postsLabel: 'artikel',
+      articleFallback: 'Artikel',
+      unknownAuthor: 'Penulis tidak diketahui',
+      pullRequestsTitle: 'Pull Request Pengguna',
+      pullRequestsDesc: 'Kontribusi kode, dokumentasi, terjemahan, dan perbaikan bug dari komunitas GitHub.',
+      pullRequestsHead: 'Pull Request',
+      pullRequestsLabel: 'PR',
+      ctaTitle: 'Dapatkan Lisensi atau Berkontribusi',
+      ctaDesc:
+        'Beli lisensi perangkat lunak melalui Paddle, kontribusikan kode, atau bagikan konten FlyEnv orisinal. Setiap jalur dapat mendukung permintaan lisensi sesuai panduan aktivasi.',
+      starOnGithub: 'Beri bintang di GitHub',
+      prev: 'Sebelumnya',
+      next: 'Berikutnya'
+    },
     zh: {
       heroTitle: 'FlyEnv 许可证',
       heroDesc:
-        '购买 FlyEnv 个人许可证，可获得高级功能的授权访问、一台设备激活和持续更新。FlyEnv 仍然保持开源并可免费评估。',
-      licenseTitle: '购买 FlyEnv 个人许可证',
+        '购买 FlyEnv 许可证，可获得高级功能的授权访问、一台设备激活和持续更新。FlyEnv 仍然保持开源并可免费评估。',
+      licenseTitle: '购买 FlyEnv 许可证',
       licenseDesc:
-        'Paddle 结账用于销售真实的 FlyEnv 软件许可证。付款后，请在应用内许可证申请流程中提交 Paddle 订单 ID 以便激活审核。',
+        'Paddle 结账用于销售真实的 FlyEnv 软件许可证。付款后，请在应用内许可证申请流程中提交 Paddle 订单 ID，由人工处理许可证发放。',
       licenseGuide: '查看许可证条款与激活说明',
       licenseGuideShort: '许可证条款',
-      paddleTitle: 'FlyEnv 个人许可证',
+      paddleTitle: 'FlyEnv 许可证',
       paddleDesc: '由 Paddle 处理的软件许可证结账',
       licensePriceLabel: '永久许可证',
       paddleFeatures: [
         '一台设备激活',
         '解除评估版限制',
-        '通常 24 小时内审核',
+        '通常 24 小时内人工处理发放',
         '支持许可证迁移'
       ],
       openingCheckout: '正在打开付款...',
@@ -456,23 +485,20 @@
       refundLink: '退款政策',
       communityTitle: '其他社区贡献方式',
       communityDesc:
-        'Ko-fi、微信、支付宝、PR 和原创文章均不通过 Paddle 处理，可在应用内作为许可证申请凭证手动提交。',
-      kofiDesc: '通过 Ko-fi 进行社区贡献',
-      supportOnKofi: '在 Ko-fi 贡献',
+        '微信、支付宝、PR 和原创文章均不通过 Paddle 处理，可在应用内作为许可证申请凭证手动提交。',
       wechatTitle: '微信支付',
       alipayTitle: '支付宝',
       scanToContribute: '扫码进行社区贡献',
       scanQr: '扫描二维码',
       specialThanks: '特别鸣谢',
       specialThanksDesc: '感谢每一位支持 FlyEnv 项目的朋友。',
+      signPathPrefix: 'FlyEnv 的 Windows 免费代码签名由',
+      signPathMiddle: ' 提供，证书由',
+      signPathEnd: '提供',
       f4Prefix: '',
       f4Suffix: ' 创始人，承担了',
       domainLabel: '域名费用',
       sentenceEnd: '。',
-      donationTitle: '社区贡献记录',
-      donationDesc:
-        '以下是通过 Ko-fi 或其他社区贡献渠道帮助 FlyEnv 的公开记录。',
-      viewOnKofi: '在 Ko-fi 查看',
       articlesTitle: '用户文章',
       articlesDesc: 'FlyEnv 用户分享的原创教程、评测、视频和迁移实践。',
       articlesHead: '文章',
@@ -486,22 +512,81 @@
       ctaTitle: '获取许可证或参与共建',
       ctaDesc:
         '通过 Paddle 购买软件许可证，或提交代码和原创内容。每一种方式都可按激活说明用于许可证申请。',
-      becomeSupporter: '在 Ko-fi 贡献',
       starOnGithub: '在 GitHub 点星',
       prev: '上一页',
       next: '下一页'
+    },
+    es: {
+      heroTitle: 'Licencia de FlyEnv',
+      heroDesc:
+        'Compra una licencia de FlyEnv para acceder con licencia a las funciones premium, activar un dispositivo y recibir actualizaciones continuas. FlyEnv sigue siendo de código abierto y puedes evaluarlo gratis.',
+      licenseTitle: 'Comprar licencia de FlyEnv',
+      licenseDesc:
+        'El proceso de pago de Paddle vende una licencia de software real de FlyEnv. Después del pago, usa el ID de tu pedido de Paddle en el flujo de solicitud de licencia de la aplicación para la emisión manual de la licencia.',
+      licenseGuide: 'Lee los términos de la licencia y la guía de activación',
+      licenseGuideShort: 'Términos de la licencia',
+      paddleTitle: 'Licencia de FlyEnv',
+      paddleDesc: 'Pago de la licencia de software procesado por Paddle',
+      licensePriceLabel: 'Licencia permanente',
+      paddleFeatures: [
+        'Activación en un dispositivo',
+        'Elimina los límites de evaluación',
+        'Emisión manual de la licencia en 24 horas',
+        'Compatible con la transferencia de licencia'
+      ],
+      openingCheckout: 'Abriendo el pago...',
+      buyWithPaddle: 'Comprar licencia con Paddle',
+      termsLink: 'Términos',
+      privacyLink: 'Privacidad',
+      refundLink: 'Reembolsos',
+      communityTitle: 'Otras formas de contribuir a la comunidad',
+      communityDesc:
+        'WeChat Pay, Alipay, los pull request y los artículos originales se gestionan fuera de Paddle y pueden enviarse manualmente como prueba de solicitud de licencia.',
+      wechatTitle: 'WeChat Pay',
+      alipayTitle: 'Alipay',
+      scanToContribute: 'Escanea el código QR para contribuir',
+      scanQr: 'Escanear código QR',
+      specialThanks: 'Agradecimientos especiales',
+      specialThanksDesc: 'Gracias a cada amigo que ayuda a FlyEnv a seguir mejorando.',
+      signPathPrefix: 'La firma de código gratuita de FlyEnv en Windows la proporciona',
+      signPathMiddle: ', con el certificado proporcionado por',
+      signPathEnd: '',
+      f4Prefix: 'Fundador de',
+      f4Suffix: ', por financiar los gastos del dominio',
+      domainLabel: '',
+      sentenceEnd: '.',
+      articlesTitle: 'Artículos de usuarios',
+      articlesDesc:
+        'Tutoriales, reseñas, vídeos e historias de migración originales compartidos por usuarios de FlyEnv.',
+      articlesHead: 'Artículos',
+      postsLabel: 'artículos',
+      articleFallback: 'Artículo',
+      unknownAuthor: 'Autor desconocido',
+      pullRequestsTitle: 'Pull requests de usuarios',
+      pullRequestsDesc:
+        'Contribuciones de código, documentación, traducción y corrección de errores de la comunidad de GitHub.',
+      pullRequestsHead: 'Pull requests',
+      pullRequestsLabel: 'PR',
+      ctaTitle: 'Obtén una licencia o contribuye',
+      ctaDesc:
+        'Compra una licencia de software a través de Paddle, contribuye con código o comparte contenido original sobre FlyEnv. Cada vía ayuda a respaldar una solicitud de licencia según la guía de activación.',
+      starOnGithub: 'Dar una estrella en GitHub',
+      prev: 'Anterior',
+      next: 'Siguiente'
     }
   }
 
   const t = computed(() => messages[props.i18n])
-  const licenseHref = computed(() =>
-    props.i18n === 'zh' ? '/zh/guide/about-license' : '/guide/about-license'
-  )
-  const termsHref = computed(() => (props.i18n === 'zh' ? '/zh/terms' : '/terms'))
-  const privacyHref = computed(() => (props.i18n === 'zh' ? '/zh/privacy' : '/privacy'))
-  const refundHref = computed(() =>
-    props.i18n === 'zh' ? '/zh/refund-policy' : '/refund-policy'
-  )
+  const localePrefix = computed(() => {
+    if (props.i18n === 'zh') return '/zh'
+    if (props.i18n === 'id') return '/id'
+    if (props.i18n === 'es') return '/es'
+    return ''
+  })
+  const licenseHref = computed(() => `${localePrefix.value}/guide/about-license`)
+  const termsHref = computed(() => `${localePrefix.value}/terms`)
+  const privacyHref = computed(() => `${localePrefix.value}/privacy`)
+  const refundHref = computed(() => `${localePrefix.value}/refund-policy`)
 
   const articlePage = ref(1)
   const pullRequestPage = ref(1)
@@ -513,7 +598,11 @@
     errorMessage:
       props.i18n === 'zh'
         ? 'Paddle 付款暂时不可用，请尝试其他方式。'
-        : 'Paddle checkout is temporarily unavailable. Please try another method.'
+        : props.i18n === 'id'
+          ? 'Checkout Paddle sedang tidak tersedia. Silakan coba lagi nanti.'
+          : props.i18n === 'es'
+            ? 'El pago con Paddle no está disponible temporalmente. Prueba con otro método.'
+            : 'Paddle checkout is temporarily unavailable. Please try another method.'
   })
 
   const articleList = computed<ArticleItem[]>(() => {
@@ -760,8 +849,13 @@
     }
 
     .community-payment-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  .community-payment-grid {
+    max-width: 40rem;
+    margin: 0 auto;
   }
 
   .donate-card {
@@ -792,10 +886,6 @@
     justify-content: center;
   }
 
-  .kofi-bg {
-    background: linear-gradient(to bottom right, #fff1f2, #fef2f2);
-  }
-
   .wechat-bg {
     background: linear-gradient(to bottom right, #f0fdf4, #ecfdf5);
   }
@@ -823,10 +913,6 @@
 
   .paddle-bg .donate-mark {
     color: #f97316;
-  }
-
-  .kofi-bg .donate-mark {
-    color: #f43f5e;
   }
 
   .wechat-bg .donate-mark {
@@ -922,10 +1008,6 @@
     opacity: 0.72;
   }
 
-  .kofi-btn {
-    background: #f43f5e;
-  }
-
   .wechat-btn {
     background: #16a34a;
   }
@@ -938,6 +1020,11 @@
     margin: 0.75rem 0 0;
     color: #dc2626;
     font-size: 0.8125rem;
+  }
+
+  .thanks-list {
+    display: grid;
+    gap: 1rem;
   }
 
   .thanks-card {

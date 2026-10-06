@@ -1,8 +1,12 @@
+---
+description: 'Understand FlyEnv evaluation limits, the $10 license, activation workflow, device policy, and contribution-based license requests.'
+---
+
 # FlyEnv Licensing Guide
 
 The FlyEnv licensing model provides a paid software license for users who need continued access to premium features while helping fund ongoing development. Our goal is **not to block core local development**, but to make the long-term maintenance of an independent developer tool sustainable.
 
-Activating a license gives you licensed access beyond the evaluation limits below. Community code contributions and original educational content may also qualify for a manually reviewed license.
+Activating a license gives you licensed access beyond the evaluation limits below. Community code contributions and original educational content may also be submitted as proof for a license request.
 
 ## 1. Evaluation Version Limitations
 
@@ -18,7 +22,7 @@ FlyEnv remains functional without a license, but the following limits apply to t
 
 ## 2. How to Get Licensed
 
-We offer one paid purchase path and two manually reviewed community paths:
+We offer the following three license application paths. FlyEnv cannot currently issue licenses automatically, so requests made through every path are handled and issued manually:
 
 ### Option A: Purchase a Personal License
 
@@ -27,7 +31,7 @@ We offer one paid purchase path and two manually reviewed community paths:
 * **Premium access:** Removes the evaluation limits listed above for the licensed device.
 * **Payment processor:** Paddle may process checkout, taxes, receipts, invoices, and payment-related support.
 
-After purchasing, keep your Paddle order ID and submit it with your license request in the app. To purchase a license, go to the [License page](/license).
+After purchasing, keep your Paddle order ID and submit it with your license request in the app. FlyEnv handles license issuance manually for this purchase path as well. To purchase a license, go to the [License page](/license).
 
 ### Option B: Contribute to the Codebase
 
@@ -78,26 +82,35 @@ You can see examples of community contribution records here: [Community records]
 
 ## 3. Request & Activation Process
 
-Once you have completed any of the steps above, follow these instructions to activate your license:
+After completing the purchase, contribution, or promotion required by one of the paths above, submit your license request in the app:
 
-1. **Provide Proof**: In the "Message" field of the application, include:
+1. **Open the License Request Area**: Go to **FlyEnv Settings -> License**, scroll to the bottom, and find the license request area.
+![FlyEnv License Setup-1](https://oss.macphpstudy.com/image/flyenv-license-1.webp)
+
+2. **Provide Proof and an Email Address**: In the "Message" field of the application, include:
 * **License purchasers**: Your Paddle order ID or receipt email.
 * **Contributors**: The link to your GitHub Pull Request.
 * **Promoters**: The link to your post, video, or shared content.
+* **Notification email**: Provide a valid email address. FlyEnv will notify you by email once your license has been issued.
 
+![FlyEnv License Setup-2](https://oss.macphpstudy.com/image/flyenv-license-2.webp)
 
-2. **Submit**: Click the **"Request License"** button.
-3. **Review**: Most requests are processed within **24 hours**.
+3. **Submit**: Click the **"Request License"** button.
+4. **Manual Processing and Issuance**: Most requests are processed within **24 hours**. FlyEnv processes and issues the license manually.
+
+![FlyEnv License Setup-3](https://oss.macphpstudy.com/image/flyenv-license-3.webp)
+
+![FlyEnv License Setup-4](https://oss.macphpstudy.com/image/flyenv-license-4.webp)
 
 ## 4. License Management & Device Binding
 
-All FlyEnv licenses are **permanent** and follow a "one license per machine" policy:
+Under the current license policy, purchased FlyEnv licenses are **permanent** and follow a "one license per machine" policy. The policy may be adjusted to annual subscriptions in the future:
 
 * **Device Binding**: Each license is tied to a specific hardware UUID.
 * **Hardware Migration**: If you get a new computer, you can transfer your license. Log in via your **GitHub account** and go to **"My Licenses"**:
 1. Locate your old device's UUID and click **"Unbind"**.
 2. Click **"Bind This Device"** to activate FlyEnv on your new machine.
 
----
+![FlyEnv License Setup-5](https://oss.macphpstudy.com/image/flyenv-license-5.webp)
 
-*Note: GitHub authorization is required to apply for and manage licenses.*
+![FlyEnv License Setup-6](https://oss.macphpstudy.com/image/flyenv-license-6.webp)
